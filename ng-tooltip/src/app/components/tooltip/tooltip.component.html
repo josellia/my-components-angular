@@ -1,0 +1,10 @@
+<a
+  #hover
+  href="#"
+  [title]="title"
+  class="tooltip"
+  (mouseenter)="setEventHover($event)"
+  (mouseleave)="setEventHover($event)"
+>
+  <ng-content></ng-content>
+</a>
