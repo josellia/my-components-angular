@@ -1,7 +1,12 @@
 // theme colors
 $primary: #d31aa5;
-
+$secondary: #1ac888;
 // color palette
+$colors:(
+    'primary': $primary,
+    'secondary': $secondary,
+    'gray': #808080
+);
 
 // fonts sizes
 $base-font-size: 1rem;
