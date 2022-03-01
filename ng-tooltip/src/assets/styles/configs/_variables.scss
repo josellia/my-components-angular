@@ -1,0 +1,16 @@
+// theme colors
+$primary: #d31aa5;
+
+// color palette
+
+// fonts sizes
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-lg: $base-font-size * 1.5;
+$font-size-xl: $base-font-size * 2;
+$font-size-xxl: $base-font-size * 3;
+$base-font-size-px: 16px;
+
+@function pxtorem($size) {
+    @return ($size / $base-font-size-px) * 1rem;
+  }

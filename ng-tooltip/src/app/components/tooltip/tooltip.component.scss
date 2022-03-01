@@ -1,6 +1,7 @@
+@import '../../../styles.scss';
 
   a {
-    font-size:25px;
+    font-size:pxtorem(25px);
     color: #0bd;
     text-decoration: none;
   }
@@ -13,19 +14,19 @@
     display: flex;
     -webkit-justify-content: center;
     justify-content: center;
-    background: #d31aa5;
+    background: $primary;
     border-radius: 8px;
     color: #fff;
     content: attr(title);
-    margin: -82px auto 0;
-    font-size: 16px;
-    padding: 13px;
-    width: 220px;
+    margin: pxtorem(-82px) auto 0;
+    font-size: pxtorem(16px);
+    padding: pxtorem(13px);
+    width: pxtorem(220px);
   }
   .tooltip:hover:before{
     border: solid;
-    border-color: #444 transparent;
-    border-width: 12px 6px 0 6px;
+    border-color: #d31aa5 transparent;
+    border-width: pxtorem(12px) pxtorem(6px) 0 pxtorem(6px);
     content: "";
     left: 45%;
     bottom: 30px;
