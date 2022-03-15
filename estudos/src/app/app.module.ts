@@ -3,14 +3,21 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FirstComponent } from './component/first/first.component';
-import { SecondComponent } from './component/second/second.component';
+import { CourseComponent } from './components/course/course.component';
+import { StudentComponent } from './components/student/student.component';
+import { HomeComponent } from './components/home/home.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { StudentDetailComponent } from './components/student-detail/student-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FirstComponent,
-    SecondComponent
+    CourseComponent,
+    StudentComponent,
+    HomeComponent,
+    PageNotFoundComponent,
+    StudentDetailComponent,
+   
   ],
   imports: [
     BrowserModule,
