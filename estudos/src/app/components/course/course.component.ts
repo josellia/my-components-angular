@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CourseService } from 'src/app/services/course.service';
 
 @Component({
   selector: 'jabuti-course',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.scss']
 })
 export class CourseComponent implements OnInit {
-
-  constructor() { }
+  courses: any = [];
+  constructor(private courseService: CourseService, 
+    private router: Router, 
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+   this.courses = this.courseService.getCourses();
+  
+  }
+
+  getCourse(id:number){
+    this.router.navigate([id], {relativeTo: this.route});
   }
 
 }

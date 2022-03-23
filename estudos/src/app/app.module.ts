@@ -8,6 +8,7 @@ import { StudentComponent } from './components/student/student.component';
 import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { StudentDetailComponent } from './components/student-detail/student-detail.component';
+import { CourseDetailComponent } from './components/course-detail/course-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { StudentDetailComponent } from './components/student-detail/student-deta
     HomeComponent,
     PageNotFoundComponent,
     StudentDetailComponent,
+    CourseDetailComponent,
    
   ],
   imports: [
