@@ -9,6 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { StudentDetailComponent } from './components/student-detail/student-detail.component';
 import { CourseDetailComponent } from './components/course-detail/course-detail.component';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { CourseDetailComponent } from './components/course-detail/course-detail.
     PageNotFoundComponent,
     StudentDetailComponent,
     CourseDetailComponent,
+    ParentComponent,
+    ChildComponent,
    
   ],
   imports: [
