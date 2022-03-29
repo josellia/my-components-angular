@@ -1,0 +1,41 @@
+$handset: 360px;
+$large-handset: 480px;
+$tablet: 640px;
+$large-tablet: 840px;
+$desktop: 960px;
+$large-desktop: 1280px;
+$x-large-desktop: 1440px;
+$xx-large-desktop: 1920px;
+
+// genarate min-width breakpoint
+@mixin breakpoint($point) {
+    @media (min-width: $point) { @content ; }
+}
+
+// genarate max-width breakpoint
+@mixin breakpoint-max {
+  @media (max-width: $point){@content;}  
+}
+// genarate min-heigth breakpoint
+@mixin height-breakpoint($point) {
+    @media (min-heigth: $point){@content;}
+}
+
+// generate max-height breakpoint
+@mixin height-breakpoint-max($point) {
+    @media (max-height: $point) {@content; }
+}
+//https://stackblitz.com/edit/angular-material-mini-variant-y2ead3?file=app%2F_breakpoints.scss
+
+/*
+use example
+@include breakpoint-max(600px){
+    .fixed-topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+  }
+}
+*/

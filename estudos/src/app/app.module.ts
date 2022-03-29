@@ -11,6 +11,12 @@ import { StudentDetailComponent } from './components/student-detail/student-deta
 import { CourseDetailComponent } from './components/course-detail/course-detail.component';
 import { ParentComponent } from './components/parent/parent.component';
 import { ChildComponent } from './components/child/child.component';
+import { LayoutComponent } from './project/components/layout/layout.component';
+import { ManagerComponent } from './components/manager/manager.component';
+import { EmployerComponent } from './components/employer/employer.component';
+import { MenuComponent } from './project/components/menu/menu.component';
+import { NavItemComponent } from './project/components/nav-item/nav-item.component';
+
 
 @NgModule({
   declarations: [
@@ -23,6 +29,13 @@ import { ChildComponent } from './components/child/child.component';
     CourseDetailComponent,
     ParentComponent,
     ChildComponent,
+    LayoutComponent,
+    ManagerComponent,
+    EmployerComponent,
+    MenuComponent,
+    NavItemComponent,
+  
+ 
    
   ],
   imports: [

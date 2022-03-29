@@ -1,0 +1,6 @@
+<ul role="menubar">
+    <li *ngFor="let item of navItems">
+        <a [routerLink]="[item.url]" routerLinkActive="router-link-active">{{item.title}}</a>
+        <!-- <jabuti-menu *ngIf="item.navigationItems" [navItems]="item.navigationItems"></jabuti-menu> -->
+    </li>
+  </ul>
