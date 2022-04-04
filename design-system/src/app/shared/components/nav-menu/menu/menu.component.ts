@@ -10,7 +10,8 @@ export class MenuComponent implements OnInit {
     {
      title: 'Home',
      active: true,
-     url: '/course'
+     url: '/course',
+     icon: 'fas fa-home'
     }
    ]
   constructor() { }
