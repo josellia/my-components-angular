@@ -4,3 +4,5 @@ export interface NavItem {
     icon?: string;
     url?: string;
 }
+
+  //TODO: fazer array do submenu

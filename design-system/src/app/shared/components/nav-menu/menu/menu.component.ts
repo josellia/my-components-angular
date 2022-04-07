@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+
   navItems = [
     {
      title: 'Home',
@@ -13,7 +14,8 @@ export class MenuComponent implements OnInit {
      url: '/course',
      icon: 'fas fa-home'
     }
-   ]
+   ];
+   
   constructor() { }
 
   ngOnInit(): void {

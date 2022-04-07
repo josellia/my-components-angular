@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { NavItemComponent } from './shared/components/nav-menu/nav-item/nav-item.component';
 import { MenuComponent } from './shared/components/nav-menu/menu/menu.component';
 import { CardComponent } from './shared/components/card/card.component';
+import { DynamicFormComponent } from './shared/components/dynamic-form/dynamic-form.component';
+import { InputComponent } from './shared/components/input/input.component';
+import { SelectComponent } from './shared/components/select/select.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavItemComponent,
     MenuComponent,
-    CardComponent
+    CardComponent,
+    DynamicFormComponent,
+    InputComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,
