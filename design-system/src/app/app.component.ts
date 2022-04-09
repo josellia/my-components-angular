@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertService } from './services/alert.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'design-system';
   public cards: Array<any> = [];
+  isAlert = false;
 
+  constructor(private alertService: AlertService){}
   ngOnInit(): void {
       this.cards = [
         {
@@ -21,5 +24,9 @@ export class AppComponent implements OnInit {
           content: 'bbbvbvbvbv'
         }
       ]
+  }
+
+  onclickAlert(){
+    this.alertService.success('salvo com sucesso', {autoClose: false})
   }
 }

@@ -9,6 +9,7 @@ import { CardComponent } from './shared/components/card/card.component';
 import { DynamicFormComponent } from './shared/components/dynamic-form/dynamic-form.component';
 import { InputComponent } from './shared/components/input/input.component';
 import { SelectComponent } from './shared/components/select/select.component';
+import { AlertComponent } from './shared/components/alert/alert.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SelectComponent } from './shared/components/select/select.component';
     CardComponent,
     DynamicFormComponent,
     InputComponent,
-    SelectComponent
+    SelectComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
