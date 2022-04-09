@@ -3,6 +3,9 @@
         <li *ngFor="let item of navItems">
             <i [class]="item.icon"></i>
             <a [routerLink]="[item.url]"routerLinkActive="router-link-active">{{item.title}}</a>
+            <!-- <span *ngFor="let child of item.children">
+                {{child.title}}
+            </span> -->
         </li>
     </ul>
 </nav>

@@ -3,6 +3,6 @@ export interface NavItem {
     active?: boolean;
     icon?: string;
     url?: string;
+    children?: NavItem[];
 }
 
-  //TODO: fazer array do submenu
