@@ -1,0 +1,23 @@
+<header class="ct" id="t1">
+    <div class="ct" id="t2">
+      <div class="ct" id="t3">
+        <div class="ct" id="t4">
+           <nav class="ct" id="t5">
+            <ul id="menu">
+                <li *ngFor="let item of navItems">
+                    <i [class]="item.icon"></i>
+                    <a [routerLink]="[item.url]"routerLinkActive="router-link-active">{{item.title}}</a>
+                    <!-- <span *ngFor="let child of item.children">
+                        {{child.title}}
+                    </span> -->
+                </li>
+            </ul>
+          
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  
+  
