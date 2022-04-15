@@ -44,6 +44,10 @@ export class AppComponent implements OnInit {
  public listCows(): void {
    this.restApiServiceCows.getCows().subscribe(cow => {
     this.cowsData = cow;
+
+    if(this.cowsData.length === 0) {
+      this.alertService.info('Sem dados para mostrar, por favor cadastre-os!', {autoClose: false});
+    }
     
    },
     error => { 
