@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Cows } from './models/cows';
 import { AlertService } from './services/alert.service';
+import { RestApiCownsService } from './services/rest-api-cowns.service';
 
 @Component({
   selector: 'app-root',
@@ -11,8 +13,17 @@ export class AppComponent implements OnInit {
   public cards: Array<any> = [];
   isAlert = false;
 
-  constructor(private alertService: AlertService){}
+  public cowsData: Cows[] = [];
+  public erroMsg: string = '';
+  public errorBlock!: boolean;
+
+  constructor(
+    private alertService: AlertService, 
+    private restApiServiceCows: RestApiCownsService){}
   ngOnInit(): void {
+    this.listCows();
+
+
       this.cards = [
         {
           title: 'test',
@@ -27,6 +38,19 @@ export class AppComponent implements OnInit {
   }
 
   onclickAlert(){
-    this.alertService.success('salvo com sucesso', {autoClose: false})
+    this.alertService.success('salvo com sucesso', {autoClose: false});
+  }
+
+ public listCows(): void {
+   this.restApiServiceCows.getCows().subscribe(cow => {
+    this.cowsData = cow;
+    
+   },
+    error => { 
+      this.errorBlock = true;
+      this.erroMsg = error.message;
+      this.alertService.error(this.erroMsg, {autoClose: true});
+
+    });
   }
 }

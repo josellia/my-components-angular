@@ -1,8 +1,13 @@
 <router-outlet></router-outlet>
-<app-menu></app-menu>
+<!-- <app-menu></app-menu>
 
-    <app-card *ngFor="let card of cards"></app-card>
-
+    <app-card *ngFor="let card of cards"></app-card> -->
+   <span>{{cowsData | json }}</span> <br>
+   <!-- <span *ngIf="errorBlock">
+       Error: {{erroMsg}}
+    </span> -->
+    <br><br>
     <app-alert></app-alert>
     <button (click)="onclickAlert()">Clique</button>
 
+<!-- PARA FAZER O TEMPLATE: https://www.techiediaries.com/angular-http-client/ -->

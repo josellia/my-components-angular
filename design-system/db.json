@@ -1,0 +1,17 @@
+{
+    "cows": [
+        {
+            "id": 1,
+            "breed": "Nelore",
+            "description": "Nelore mocho ",
+            "gender": "Macho"
+        },
+
+        {
+            "id": 2,
+            "breed": "Guzera",
+            "description": "Vaca leiteira ",
+            "gender": "Fêmea"
+        }
+    ]
+}
