@@ -11,6 +11,7 @@ import { DynamicFormComponent } from './shared/components/dynamic-form/dynamic-f
 import { InputComponent } from './shared/components/input/input.component';
 import { SelectComponent } from './shared/components/select/select.component';
 import { AlertComponent } from './shared/components/alert/alert.component';
+import { ButtonComponent } from './shared/components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AlertComponent } from './shared/components/alert/alert.component';
     DynamicFormComponent,
     InputComponent,
     SelectComponent,
-    AlertComponent
+    AlertComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
