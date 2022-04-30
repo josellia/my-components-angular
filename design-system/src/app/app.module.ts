@@ -12,6 +12,7 @@ import { InputComponent } from './shared/components/input/input.component';
 import { SelectComponent } from './shared/components/select/select.component';
 import { AlertComponent } from './shared/components/alert/alert.component';
 import { ButtonComponent } from './shared/components/button/button.component';
+import { TitleComponent } from './shared/components/title/title.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ButtonComponent } from './shared/components/button/button.component';
     InputComponent,
     SelectComponent,
     AlertComponent,
-    ButtonComponent
+    ButtonComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,
